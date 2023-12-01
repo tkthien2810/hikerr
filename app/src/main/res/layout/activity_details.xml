@@ -1,0 +1,62 @@
+<!-- res/layout/activity_details.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewHikeName"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Hike Name:"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textViewObservations"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_below="@id/textViewHikeName"
+        android:layout_marginTop="13dp"
+        android:text="Observations:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewObservations"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Search" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewObservations"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/buttonBackToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Back to Home" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBackToHome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Delete" />
+</RelativeLayout>
